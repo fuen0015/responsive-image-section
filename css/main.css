@@ -111,6 +111,7 @@ img {
   .section-body {
     vertical-align: middle;
     text-align: left;
+    max-width: 25em;
   }
 
   .img-box {
@@ -119,4 +120,13 @@ img {
     margin-bottom: 1rem;
     margin-top: 2rem;
   }
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+
 }
