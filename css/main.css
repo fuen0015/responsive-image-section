@@ -23,12 +23,17 @@ body {
 
 section {
   background-color: #e2e2e2;
-  display: inline-block;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-body {
-  margin: 1rem;
+  display: block;
+  padding: 1rem;
+}
+
+.img-box {
+  display: block;
 }
 
 h1 {
@@ -42,6 +47,7 @@ p {
 
 .img-flex {
   display: block;
+  width: 100%;
 }
 
 img {
@@ -74,12 +80,8 @@ img {
 @media only screen and (min-width: 38em) {
 
   html {
-    font-size: 100%;
+    font-size: 110%;
     line-height: 1.4;
-  }
-
-  .img-box {
-    display: inline-block;
   }
 
   .section-body {
@@ -87,8 +89,34 @@ img {
     display: inline-block;
   }
 
-  .img-flex {
-    width: 50%;
+  .img-box {
+    width: 49%;
+    display: inline-block;
   }
 
+  h1 {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  .section-body {
+    vertical-align: middle;
+    text-align: left;
+  }
+
+  .img-box {
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
 }
